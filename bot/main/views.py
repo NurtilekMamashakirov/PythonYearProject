@@ -2,6 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from main.management.commands.bot import bot
+
 
 # Create your views here.
 class LinkUpdatesView(APIView):
@@ -9,5 +11,7 @@ class LinkUpdatesView(APIView):
         data = request.data
         link = data['link']
         chat_ids = data['chat_ids']
-        #todo
+        for chat_id in chat_ids:
+            chat_id = int(chat_id)
+            bot.send_message(chat_id, "Обновление по ссылке")
         return Response('', status=status.HTTP_200_OK)

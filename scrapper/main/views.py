@@ -15,17 +15,17 @@ class ChatApiView(APIView):
         return Response({"chats": ChatSerializer(chats, many=True).data})
 
     def post(self, request):
-        serializer = ChatSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        # serializer = ChatSerializer(data=request.data)
+        # serializer.is_valid(raise_exception=True)
 
-        new_chat = tg_chat_service.create_chat(request.data["id"])
+        new_chat = tg_chat_service.create_chat(request.data["chat_id"])
         return Response(ChatSerializer(new_chat).data)
 
     def delete(self, request):
-        serializer = ChatSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        # serializer = ChatSerializer(data=request.data)
+        # serializer.is_valid(raise_exception=True)
 
-        chat_to_delete = tg_chat_service.delete_chat(request.data["id"])
+        chat_to_delete = tg_chat_service.delete_chat(request.data["chat_id"])
         return Response(ChatSerializer(chat_to_delete).data)
 
 

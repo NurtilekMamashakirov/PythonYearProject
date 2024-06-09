@@ -14,7 +14,7 @@ help_message = ('Доступны следующие комманды: \n '
                 '/untrack -- закончить отслеживание ссылки\n'
                 '/list -- список отслеживаемых ссылок ')
 
-unknown_message = 'Комманда не распознана'
+unknown_message = 'Команда не распознана'
 
 
 class Command(BaseCommand):
@@ -25,7 +25,7 @@ class Command(BaseCommand):
         def message_handler(message: telebot.types.Message):
             if message.text.lower() == '/start':
                 start_handler(message)
-            elif message.text.lower == '/help':
+            elif message.text.lower() == '/help':
                 help_handler(message)
             elif message.text.lower().split(' ')[0] == '/track' and len(message.text.split(' ')) == 2:
                 track_handler(message)
