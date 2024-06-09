@@ -77,8 +77,8 @@ def notify_bot(link):
 
 def get_chats_of_link(link):
     chats_of_link = []
-    chats = Chat.objects.all().values()
+    chats = Chat.objects.all()
     for chat in chats:
-        if link.url in [link.url for link in chat.links.values()]:
+        if link.url in [link_of_chat.url for link_of_chat in chat.links.all()]:
             chats_of_link.append(chat)
     return chats_of_link

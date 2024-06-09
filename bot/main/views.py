@@ -9,9 +9,9 @@ from main.management.commands.bot import bot
 class LinkUpdatesView(APIView):
     def post(self, request):
         data = request.data
-        link = data['link']
+        link = data['url']
         chat_ids = data['chat_ids']
         for chat_id in chat_ids:
             chat_id = int(chat_id)
-            bot.send_message(chat_id, "Обновление по ссылке")
+            bot.send_message(chat_id, f'Обновление по ссылке {link}')
         return Response('', status=status.HTTP_200_OK)
