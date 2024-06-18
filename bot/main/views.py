@@ -7,6 +7,8 @@ from main.management.commands.bot import bot
 
 # Create your views here.
 class LinkUpdatesView(APIView):
+    # обрабатывает post-запрос на api/link-updates, получает ссылку, по
+    # которому поступило обновление, и оповещает об этом пользователей
     def post(self, request):
         data = request.data
         link = data['url']

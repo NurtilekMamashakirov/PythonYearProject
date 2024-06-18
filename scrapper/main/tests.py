@@ -22,6 +22,4 @@ def get_url_for_stack_overflow_request(url):
 
 
 print(is_stack_overflow_url(
-    "https://stackoverflow.com/questions/78598763/вопрос-для-теста-telebota-на-python"))
-print(get_url_for_stack_overflow_request(
-    "https://stackoverflow.com/questions/78598763/вопрос-для-теста-telebota-на-python"))
+    "https://stackoverflow.com/questions/78598763/%d0%92%d0%be%d0%bf%d1%80%d0%be%d1%81-%d0%b4%d0%bb%d1%8f-%d1%82%d0%b5%d1%81%d1%82%d0%b0-telebota-%d0%bd%d0%b0-python"))

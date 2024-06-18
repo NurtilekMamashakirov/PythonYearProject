@@ -1,6 +1,7 @@
 from main.models import Chat
 
 
+# запись чата в бд
 def create_chat(id):
     if Chat.objects.filter(id=id).exists():
         return Chat(id=0)
@@ -10,6 +11,7 @@ def create_chat(id):
         )
 
 
+# удаление чата из бд
 def delete_chat(id):
     if Chat.objects.filter(id=id).exists():
         Chat.objects.get(id=id).delete()
