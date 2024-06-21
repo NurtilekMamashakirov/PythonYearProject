@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c517ef-4282-4cb9-8086-b5ab025da97e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98fab64b-fc58-4ceb-8311-890db5aa4350.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98fab64b-fc58-4ceb-8311-890db5aa4350.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98fab64b-fc58-4ceb-8311-890db5aa4350/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98fab64b-fc58-4ceb-8311-890db5aa4350/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/main/management/commands/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/main/management/commands/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/main/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/main/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/jobs/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/jobs/scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/jobs/scheduler_starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/jobs/scheduler_starter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/services/link_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/services/link_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/services/tg_chat_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/services/tg_chat_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/utils/link_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/utils/link_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +134,7 @@
       <workItem from="1717700525082" duration="12021000" />
       <workItem from="1717923375548" duration="73000" />
       <workItem from="1718040332170" duration="3921000" />
-      <workItem from="1718695877983" duration="4884000" />
+      <workItem from="1718695877983" duration="5650000" />
     </task>
     <servers />
   </component>

@@ -11,9 +11,9 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>913</IntrospectionStateNumber>
+      <IntrospectionStateNumber>926</IntrospectionStateNumber>
       <ServerVersion>16.2</ServerVersion>
-      <StartupTime>1717701946</StartupTime>
+      <StartupTime>1718696179</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1408,7 +1408,7 @@ true posixrules
 13212||10|C|G
 13212||-9223372036854775808|U|G
 13212||10|U|G</Grants>
-      <IntrospectionStateNumber>913</IntrospectionStateNumber>
+      <IntrospectionStateNumber>926</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4831,8 +4831,8 @@ true posixrules
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>913</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-06-10.17:49:32</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>926</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-06-21.09:48:23</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -5015,13 +5015,13 @@ true posixrules
     </table>
     <table id="290" parent="264" name="main_chat">
       <ObjectId>16544</ObjectId>
-      <StateNumber>764</StateNumber>
+      <StateNumber>914</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="291" parent="264" name="main_chat_links">
       <ObjectId>16550</ObjectId>
-      <StateNumber>764</StateNumber>
+      <StateNumber>914</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -6340,27 +6340,27 @@ pg_catalog</CollationParentNames>
       <UnderlyingIndexId>16575</UnderlyingIndexId>
     </key>
     <column id="464" parent="290" name="id">
-      <DasType>integer|0s</DasType>
+      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>764</StateNumber>
-      <TypeId>23</TypeId>
+      <StateNumber>914</StateNumber>
+      <TypeId>20</TypeId>
     </column>
     <index id="465" parent="290" name="main_chat_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16547</ObjectId>
+      <ObjectId>16688</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>764</StateNumber>
+      <StateNumber>914</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="466" parent="290" name="main_chat_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16548</ObjectId>
+      <ObjectId>16689</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>764</StateNumber>
-      <UnderlyingIndexId>16547</UnderlyingIndexId>
+      <StateNumber>914</StateNumber>
+      <UnderlyingIndexId>16688</UnderlyingIndexId>
     </key>
     <column id="467" parent="291" name="id">
       <DasType>bigint|0s</DasType>
@@ -6372,11 +6372,11 @@ pg_catalog</CollationParentNames>
       <TypeId>20</TypeId>
     </column>
     <column id="468" parent="291" name="chat_id">
-      <DasType>integer|0s</DasType>
+      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>764</StateNumber>
-      <TypeId>23</TypeId>
+      <StateNumber>914</StateNumber>
+      <TypeId>20</TypeId>
     </column>
     <column id="469" parent="291" name="link_id">
       <DasType>bigint|0s</DasType>
@@ -6385,16 +6385,7 @@ pg_catalog</CollationParentNames>
       <StateNumber>764</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="470" parent="291" name="main_chat_links_chat_id_f6d9ebf0_fk_main_chat_id">
-      <ColNames>chat_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <ObjectId>16558</ObjectId>
-      <StateNumber>764</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16544</RefTableId>
-    </foreign-key>
-    <foreign-key id="471" parent="291" name="main_chat_links_link_id_7cba7b8f_fk_main_link_id">
+    <foreign-key id="470" parent="291" name="main_chat_links_link_id_7cba7b8f_fk_main_link_id">
       <ColNames>link_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
@@ -6403,48 +6394,48 @@ pg_catalog</CollationParentNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16536</RefTableId>
     </foreign-key>
-    <index id="472" parent="291" name="main_chat_links_pkey">
+    <index id="471" parent="291" name="main_chat_links_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16554</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>764</StateNumber>
+      <StateNumber>914</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="473" parent="291" name="main_chat_links_chat_id_link_id_48b6b47d_uniq">
+    <index id="472" parent="291" name="main_chat_links_chat_id_link_id_48b6b47d_uniq">
       <ColNames>chat_id
 link_id</ColNames>
-      <ObjectId>16556</ObjectId>
-      <StateNumber>764</StateNumber>
+      <ObjectId>16694</ObjectId>
+      <StateNumber>914</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="474" parent="291" name="main_chat_links_chat_id_f6d9ebf0">
+    <index id="473" parent="291" name="main_chat_links_chat_id_f6d9ebf0">
       <ColNames>chat_id</ColNames>
-      <ObjectId>16568</ObjectId>
-      <StateNumber>764</StateNumber>
+      <ObjectId>16696</ObjectId>
+      <StateNumber>914</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="475" parent="291" name="main_chat_links_link_id_7cba7b8f">
+    <index id="474" parent="291" name="main_chat_links_link_id_7cba7b8f">
       <ColNames>link_id</ColNames>
       <ObjectId>16569</ObjectId>
-      <StateNumber>764</StateNumber>
+      <StateNumber>914</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="476" parent="291" name="main_chat_links_pkey">
+    <key id="475" parent="291" name="main_chat_links_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16555</ObjectId>
       <Primary>1</Primary>
       <StateNumber>764</StateNumber>
       <UnderlyingIndexId>16554</UnderlyingIndexId>
     </key>
-    <key id="477" parent="291" name="main_chat_links_chat_id_link_id_48b6b47d_uniq">
-      <ObjectId>16557</ObjectId>
-      <StateNumber>764</StateNumber>
-      <UnderlyingIndexId>16556</UnderlyingIndexId>
+    <key id="476" parent="291" name="main_chat_links_chat_id_link_id_48b6b47d_uniq">
+      <ObjectId>16695</ObjectId>
+      <StateNumber>914</StateNumber>
+      <UnderlyingIndexId>16694</UnderlyingIndexId>
     </key>
-    <column id="478" parent="292" name="id">
+    <column id="477" parent="292" name="id">
       <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;main_link_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -6453,21 +6444,21 @@ link_id</ColNames>
       <SequenceId>16535</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="479" parent="292" name="url">
+    <column id="478" parent="292" name="url">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>764</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="480" parent="292" name="updated_at">
+    <column id="479" parent="292" name="updated_at">
       <DasType>timestamp with time zone|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>764</StateNumber>
       <TypeId>1184</TypeId>
     </column>
-    <index id="481" parent="292" name="main_link_pkey">
+    <index id="480" parent="292" name="main_link_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16542</ObjectId>
@@ -6476,7 +6467,7 @@ link_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="482" parent="292" name="main_link_pkey">
+    <key id="481" parent="292" name="main_link_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16543</ObjectId>
       <Primary>1</Primary>
