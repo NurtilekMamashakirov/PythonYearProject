@@ -3,6 +3,7 @@ from urllib.parse import urlparse
 from main import config
 
 
+# проверяет, является ли url ссылкой на гх
 def is_github_url(url):
     parsed_url = urlparse(url)
     if parsed_url.hostname.lower() == config.GITHUB_HOST:
@@ -11,6 +12,7 @@ def is_github_url(url):
         return False
 
 
+# проверяет, является ли url ссылкой на стек
 def is_stack_overflow_url(url):
     parsed_url = urlparse(url)
     if parsed_url.hostname.lower() in config.STACK_OVERFLOW_HOSTS:
@@ -19,13 +21,14 @@ def is_stack_overflow_url(url):
         return False
 
 
+# возвращает url для обращения к гх апи
 def get_url_for_github_request(url):
     parsed_url = urlparse(url)
     profile_name = parsed_url.path.split('/')[1]
     repos_name = parsed_url.path.split('/')[2]
     return config.GITHUB_API_URL + '/' + profile_name + '/' + repos_name + '/events'
 
-
+# возвращает url для обращения к стек апи
 def get_url_for_stack_overflow_request(url):
     parsed_url = urlparse(url)
     question_id = parsed_url.path.split('/')[2]

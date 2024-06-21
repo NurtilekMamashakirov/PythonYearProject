@@ -11,7 +11,7 @@ class Link(models.Model):
 
 
 class Chat(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.BigIntegerField(primary_key=True, unique=True)
     links = models.ManyToManyField(Link)
 
     def __str__(self):
